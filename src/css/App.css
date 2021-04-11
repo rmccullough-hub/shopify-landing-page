@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#background {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    display: block;
+}
+
+.white {
+    color: white;
+}
+
+main {
+    width: 900px;
+    min-width: 50vw;
+    margin: 0 auto;
+    height: fit-content;
+    text-align: center;
+    color:#212326;
+}
+
+h1 {
+    margin-top: 30px;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+}
+
+span {
+    font-size: 1.9rem;
+}
+
+form {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.white>p {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+input {
+    border: none;
+    width: 60%;
+    height: 50px;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    border-radius: 0.3rem;
+    height: 50px;
+    width: 135px;
+    background-color: #212326;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 8px 8px rgba(0,0,0,0.11), 
+    0 16px 16px rgba(0,0,0,0.11), 
+    0 32px 32px rgba(0,0,0,0.11);
+}
+
+.dark-btn {
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.dark-btn:hover {
+    background-color: #2d2e30;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.158), 
+    0 2px 2px rgba(0, 0, 0, 0.158), 
+    0 4px 4px rgba(0, 0, 0, 0.158), 
+    0 8px 8px rgba(0, 0, 0, 0.158), 
+    0 16px 16px rgba(0, 0, 0, 0.158), 
+    0 32px 32px rgba(0, 0, 0, 0.158);
+}
+
+.light-btn {
+    transition-property: all;
+    transition-duration: 1s;
+    width: 150px;
+}
+
+.light-btn:hover {
+    background-color: #006149;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.158), 
+    0 2px 2px rgba(0, 0, 0, 0.158), 
+    0 4px 4px rgba(0, 0, 0, 0.158), 
+    0 8px 8px rgba(0, 0, 0, 0.158), 
+    0 16px 16px rgba(0, 0, 0, 0.158), 
+    0 32px 32px rgba(0, 0, 0, 0.158);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#hero {
+    width: 100%;
+}
+
+.flex-container {
+    text-align: left;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.flex-item {
+    width: 250px;
+}
+
+.flex-item>img {
+    display: block;
+}
+
+.flex-item>* {
+    display: block;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.35rem;
+}
+
+.flex-item>p {
+    opacity: 75%;
+}
+
+.flex-item>b {
+    font-size: 1.1rem;
+}
+
+
+.brands {
+    margin: 100px auto;
+    width: 100%;
+    height: fit-content;
+    border-top: 1px solid rgba(0, 0, 0, 0.158);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.brands>img {
+    width: 6.3rem;
+    padding: 5px;
+    display: block;
+}
+
+.break {
+    flex-basis: 100%;
+}
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+.call-to-action>* {
+    display: block;
+    margin: 10px auto;
+}
+
+.call-to-action>span {
+    font-size: 1.55rem;
+    margin-top: 0px;
+}
+
+.call-to-action>button {
+    background-color: #008060;
+    color: white;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+a {
+    color: #008060;
+    padding: 10px;
+}
+
+@media (max-width:932px) {
+    main {
+        width: 70vw;
+    }
+}
+@media (max-width:680px) {
+    form {
+        display: flex;
+    }
+}
+@media (max-width:613px) {
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    input {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    #background {
+        width: 100vw;
+        height: 110%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:385px) {
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    input {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    #background {
+        width: 100vw;
+        height: 110%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+}
